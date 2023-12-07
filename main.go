@@ -13,7 +13,7 @@ func main() {
 		Flags: []cli.Flag{
 			&cli.StringFlag {
 				Name: "domain",
-				Aleases: []string{"d"},
+				Aliases: []string{"d"},
 				Usage: "Domain name to see if running",
 				Required: true
 			} ,

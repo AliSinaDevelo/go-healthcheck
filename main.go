@@ -1,8 +1,10 @@
 package main
 
 import (
-	"os"
 	"fmt"
+	"log"
+	"os"
+
 	"github.com/urfave/cli/v2"
 )
 
@@ -15,13 +17,13 @@ func main() {
 				Name: "domain",
 				Aliases: []string{"d"},
 				Usage: "Domain name to see if running",
-				Required: true
+				Required: true,
 			} ,
 			&cli.StringFlag {
 				Name: "port",
 				Aliases: []string{"p"},
 				Usage: "Port number",
-				Required: false
+				Required: false,
 			} ,
 		},
 		Action: func(c *cli.Context) error {
